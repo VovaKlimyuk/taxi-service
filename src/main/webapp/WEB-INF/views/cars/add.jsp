@@ -18,7 +18,7 @@
             <div class="formTitle">Choose a Manufacturer</div>
 
             <div class="formTitle">
-                <select method="post" name="manufacturer_id" action="${pageContext.request.contextPath}/cars/add">
+                <select name="manufacturer_id">
                     <c:forEach var="manufacturer" items="${manufacturers}">
                         <option><c:out value="${manufacturer.id} ${manufacturer.name} ${manufacturer.country} "/></option>
                     </c:forEach>

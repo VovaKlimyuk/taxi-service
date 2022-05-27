@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 public class ConnectionUtil {
-    private static final String URL = "YOUR URL TO DARA BASE";
+    private static final String URL = "DATABASE";
     private static final String USERNAME = "YOUR USER NAME";
     private static final String PASSWORD = "YOUR PASSWORD";
     private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";

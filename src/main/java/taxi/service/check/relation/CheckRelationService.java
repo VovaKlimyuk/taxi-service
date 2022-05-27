@@ -1,5 +1,5 @@
 package taxi.service.check.relation;
 
 public interface CheckRelationService {
-    boolean validId(Long carId, Long driverId);
+    boolean checkRelation(Long carId, Long driverId);
 }

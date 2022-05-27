@@ -16,7 +16,7 @@ public class CheckRelationServiceImpl implements CheckRelationService {
             .getInstance(DriverService.class);
 
     @Override
-    public boolean validId(Long carId, Long driverId) {
+    public boolean checkRelation(Long carId, Long driverId) {
         Driver driver = driverService.get(driverId);
         Car car = carService.get(carId);
         List<Car> allByDriver = carService.getAllByDriver(driverId);

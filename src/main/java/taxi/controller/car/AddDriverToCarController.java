@@ -31,7 +31,7 @@ public class AddDriverToCarController extends HttpServlet {
         String idCar = request.getParameter("car_id");
         Long carId = Long.parseLong(idCar.substring(0, idCar.indexOf(" ")));
         Long driverId = (Long) request.getSession().getAttribute("driver_id");
-        if (!checkRelation.validId(carId, driverId)) {
+        if (!checkRelation.checkRelation(carId, driverId)) {
             request.setAttribute("errorMsg", "Can't add driver to car");
             getAllCar(request);
             request.getRequestDispatcher("/WEB-INF/views/cars/drivers/add.jsp")

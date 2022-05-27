@@ -16,7 +16,7 @@ write / delete / read / update data in the database
 * Add a driver to the car
 * Show all drivers / delete driver from the database
 * Show all cars / delete driver from the database
-* Show all cars for current user / delete
+* Show all cars for current user
 * Show all manufacturers / delete manufacturers from the database
 
 <a name="Used-Technologies"></a>
@@ -45,6 +45,6 @@ Project implemented refers to an n-tier structure and has three layers:
 1. Configure Apache Tomcat (v9.0.50) for your IDE
 2. Install MySQL
 3. Run the script from resources/init_db_my.sql Warning! if you already have a DB named "taxi", this script will delete it and create a new empty DB with the same name.
-4. In src/main/java/taxi/util/ConnectionUtil replace "YOUR URL TO DARA BASE", "YOUR USERNAME", "YOUR PASSWORD" stubs with your properties.
+4. In src/main/java/taxi/util/ConnectionUtil replace "DATABASE", "YOUR USERNAME", "YOUR PASSWORD" stubs with your properties.
 5. Configure TomCat Local server (Add New Configuration -> TomCat -> Local -> Fix -> taxi-service:war exploded -> OK)
 6. Run project!

@@ -13,7 +13,7 @@
     <form method="post" id="car" action="${pageContext.request.contextPath}/cars/drivers/add">
         <div class="formTitle">Choose car</div>
         <div class="formTitle">
-            <select method="post" name="car_id" action="${pageContext.request.contextPath}/cars/drivers/add">
+            <select name="car_id">
                 <c:forEach var="car" items="${cars}">
                     <option><c:out value="${car.id} ${car.model} ${car.manufacturer.name} "/></option>
                 </c:forEach>
